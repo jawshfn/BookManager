@@ -96,7 +96,7 @@ public class BookstoreFrame extends JFrame {
 
 			Desktop desktop = Desktop.getDesktop();
 
-			String userGuideUrl = "https://jawshfn.github.io/SimpleBookstoreManagementProgram/";
+			String userGuideUrl = "https://jawshfn.github.io/BookManager/";
 
 			try {
 

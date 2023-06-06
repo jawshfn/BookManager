@@ -30,41 +30,17 @@
         <p>To remove a book from the list, select the book in the list and click the 'Remove Book' button. The book will be removed from the list.</p>
         <h2>Removing All Books</h2>
         <p>To remove all books from the list, click the 'Remove All' button. All books will be removed from the list.</p>
+        <h2>Feel Free to Write a Review!</h2>
 
-        <h2>Write a Review</h2>
-        <form id="reviewForm">
+        <form id="reviewForm" action="https://formspree.io/f/xknalqbn" method="POST">
+            <input type="hidden" name="_subject" value="New review for Bookstore App" />
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br>
             <label for="review">Review:</label><br>
             <textarea id="review" name="review" required></textarea><br>
             <input type="submit" value="Submit">
         </form>
-
-        <div id="reviews"></div>
-
-        <script>
-            document.getElementById('reviewForm').addEventListener('submit', function(event) {
-                // Prevent the form from being submitted normally
-                event.preventDefault();
-
-                // Get the name and review
-                var name = document.getElementById('name').value;
-                var review = document.getElementById('review').value;
-
-                // Create a new div for the review
-                var reviewDiv = document.createElement('div');
-                reviewDiv.className = 'review';
-
-                // Add the name and review to the div
-                reviewDiv.innerHTML = '<h3>' + name + ' says:</h3><p>' + review + '</p>';
-
-                // Add the div to the reviews div
-                document.getElementById('reviews').appendChild(reviewDiv);
-
-                // Clear the form
-                document.getElementById('name').value = '';
-                document.getElementById('review').value = '';
-            });
-        </script>
+        
+       
     </body>
 </html>

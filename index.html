@@ -3,8 +3,11 @@
     <head>
         <title>Bookstore User Guide</title>
         <style>
-            body {
+           body {
                 font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
             }
             h1, h2 {
                 color: #333;
@@ -12,17 +15,21 @@
             p {
                 color: #666;
             }
-            #reviews {
-                margin-top: 2em;
-            }
-            .review {
-                border: 1px solid #ddd;
+            .container {
+                margin: auto;
+                max-width: 800px;
                 padding: 1em;
-                margin-bottom: 1em;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            form {
+                margin-top: 2em;
             }
         </style>
     </head>
     <body>
+        <div class="container">
         <h1>Bookstore User Guide</h1>
         <h2>Adding a Book</h2>
         <p>To add a book to the list, click the 'Add Book' button. Fill in the book's details in the dialog box and click 'Submit'.</p>
@@ -42,6 +49,7 @@
             <input type="submit" value="Submit">
         </form>
         <p><small>This form is powered by Formspree, a secure form submission service. Your review will be sent directly to us via email and will not be stored on any server.
-            We only use your feedback to improve our application and do not share your information with any third parties.</small></p>        
+            We only use your feedback to improve our application and do not share your information with any third parties.</small></p>
+            </div>       
     </body>
 </html>

@@ -22,5 +22,16 @@
         <p>To remove a book from the list, select the book in the list and click the 'Remove Book' button. The book will be removed from the list.</p>
         <h2>Removing All Books</h2>
         <p>To remove all books from the list, click the 'Remove All' button. All books will be removed from the list.</p>
+        
+        <h2>Write a Review</h2>
+        <form id="reviewForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="review">Review:</label><br>
+            <textarea id="review" name="review" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="reviews"></div>
     </body>
 </html>
